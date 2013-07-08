@@ -1,5 +1,8 @@
 Stunable::Application.routes.draw do
   
+  resources :blog_posts
+
+
   ComfortableMexicanSofa::Routing.admin(:path => '/cms-admin')
   
   # Make sure this routeset is defined last
