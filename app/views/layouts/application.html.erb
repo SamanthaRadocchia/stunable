@@ -1,14 +1,57 @@
 <!DOCTYPE html>
+<!--
+             .                                      .o8       oooo            
+           .o8                                     "888       `888            
+ .oooo.o .o888oo oooo  oooo  ooo. .oo.    .oooo.    888oooo.   888   .ooooo.   
+d88(  "8   888   `888  `888  `888P"Y88b  `P  )88b   d88' `88b  888  d88' `88b 
+`"Y88b.    888    888   888   888   888   .oP"888   888   888  888  888ooo888 
+o.  )88b   888 .  888   888   888   888  d8(  888   888   888  888  888    .o 			
+8""888P'   "888"  `V88V"V8P' o888o o888o `Y888""8o  `Y8bod8P' o888o `Y8bod8P'  
+
+					==jgs==!====!=====!=====!====!===!===!=====!===!===!====
+			         /`\__/`\   /`\   /`\  |~| |~|  /)=I=(\  /`"""`\
+			        |        | |   `"`   | | | | |  |  :  | |   :   |
+			        '-|    |-' '-|     |-' )/\ )/\  |  T  \ '-| : |-'
+			          |    |     |     |  / \// \/  (  |\  |   ___
+			          '.__.'     '.___.'  \_/ \_/   |  |/  /
+			                                        |  /  /
+			                                        |  \ /
+			                                        '__'`
+
+                                                                              
+                                                                              
+                                                    																-->   
 <html>
 <head>
+<!-- START_HIGHLIGHT -->
   <title>Stunable</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+<!-- END_HIGHLIGHT -->
+  <%= stylesheet_link_tag    "application", media: "all" %><!-- <label id="code.slt"/> -->
+  <%= javascript_include_tag "application" %><!-- <label id="code.jlt"/> -->
+  <%= csrf_meta_tags %><!-- <label id="code.csrf"/> -->
 </head>
-<body>
-
-<%= yield %>
-
+<!-- END:head -->
+<body class="<%= controller.controller_name %>">
+<!-- START_HIGHLIGHT -->
+  <div id="banner">
+    <%= image_tag("stunable_logo.png") %>
+    <%#= @page_title || "Stunable" %> <!--<label id="code.depot.e.title"/> -->
+  </div>
+  <div id="columns">
+    <div id="side">
+      <ul>
+        <li><a href="http://www....">Home</a></li>
+        <li><a href="http://www..../faq">Questions</a></li>
+        <li><a href="http://www..../news">News</a></li>
+        <li><a href="http://www..../contact">Contact</a></li>
+      </ul>
+    </div>
+    <div id="main">
+<!-- END_HIGHLIGHT -->
+      <%= yield %><!-- <label id="code.depot.e.include"/> -->
+<!-- START_HIGHLIGHT -->
+    </div>
+  </div>
+<!-- END_HIGHLIGHT -->
 </body>
 </html>

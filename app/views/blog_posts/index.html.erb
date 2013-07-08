@@ -1,27 +1,29 @@
-<h1>Listing blog_posts</h1>
+
+<h1>Blog Posts</h1>
+
 
 <table>
-  <tr>
-    <th>Title</th>
-    <th>Author</th>
-    <th>Body</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
 <% @blog_posts.each do |blog_post| %>
-  <tr>
-    <td><%= blog_post.title %></td>
-    <td><%= blog_post.author %></td>
-    <td><%= blog_post.body %></td>
-    <td><%= link_to 'Show', blog_post %></td>
-    <td><%= link_to 'Edit', edit_blog_post_path(blog_post) %></td>
-    <td><%= link_to 'Destroy', blog_post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
+
+    <td class="list_description">
+      <dl>
+        <dt> <%= blog_post.title %> </dt>
+        <dt> By <%= blog_post.author %> </dt>
+        <dt> <%= blog_post.body %>  </dt>
+      </dl>
+    </td>
+
+    <td class="list_actions">
+      <%= link_to 'Show', blog_post %><br/>
+      <%= link_to 'Edit', edit_blog_post_path(blog_post) %><br/>
+      <%= link_to 'Destroy', blog_post, method: :delete,
+                  data: { confirm: 'Are you sure you want to scrap your blog post?'} %>
+    </td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Blog post', new_blog_post_path %>
+<%= link_to 'New Blog Post', new_blog_post_path %>
