@@ -8,7 +8,7 @@ gem 'rails', '3.2.13'
 gem 'sqlite3'
 
 # Comfortable Mexican Sofa is a CMS engine for rails 3 applications 
-gem 'comfortable_mexican_sofa'
+# gem 'comfortable_mexican_sofa'
 
 
 # Gems used only for assets and not required

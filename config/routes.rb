@@ -1,14 +1,8 @@
 Stunable::Application.routes.draw do
-  
   resources :blog_posts
 
 
-  ComfortableMexicanSofa::Routing.admin(:path => '/cms-admin')
-  
-  # Make sure this routeset is defined last
-  ComfortableMexicanSofa::Routing.content(:path => '/', :sitemap => false)
-
-  # The priority is based upon order of creation:
+    # The priority is based upon order of creation:
   # first created -> highest priority.
 
   # Sample of regular route:
