@@ -25,64 +25,79 @@ o.  )88b   888 .  888   888   888   888  d8(  888   888   888  888  888    .o
 @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic);
 @import url(http://fonts.googleapis.com/css?family=Josefin+Sans);
 
-
-blog {
+body{
+ /* text-align: center;*/
+  color: #ffffff;
+  }
   
-  h1 {
-    margin: 0;
-    padding-bottom: 0.5em;
-    font-family: 'EB Garamond', serif;
-    font: 150%;
-    color: #226;
-    border-bottom: 3px dotted #77d;
+  .floating-container{
+    margin: 0 auto;
+    width:90%;
+    left:4em;
+    border:5px solid #e6e6e6;
+    background-color: #000000;
+    position:fixed;
+    top:100px;
+    z-index: 100000;
+    opacity: .8;
   }
 
-  /* An entry or blog post */
-  .entry {
-    overflow: auto;
-    margin-top: 1em;
-    border-bottom: 1px dotted #77d;
-    min-height: 100px;
+  .floating-container .inner-content{
+    padding:15px;
+  }
+
+  .background{
+    background:#F4F4F4 url("background.png");
+    background-repeat:no-repeat;
+    position:relative;
+  }
+
+  .nav{
+    width:100%;
+    left:290px;
+    border-bottom:1px solid #A8A8A8;
+    background-color: #000000;
+    position:fixed;
+    height: 67px;
+    top:-8px;
+    z-index: 100000;
+    opacity: .6;
+  }
+
+  .nav .nav-links{
+    font-family: 'Josefin Sans';
+/*    font-family: 'Text Me One';*/
+/*    font-family: 'Open Sans Condensed';*/
+    font-size: 30px;
+    color:#7f10b5;
+    text-transform: uppercase;
+}
+
+  .table{
+    border-spacing: 10px;
+  }
+  
+  .logo{
+    position:fixed;
+    top:-9px;
+    left:-7px;
+    border-right: 2px;
+    border-top: 2px;
+    border-bottom: 1px;
+    padding-right:5px;
+    padding-top:5px;
+  }
+
+  .banner{
+    background: #8A2BE2;
+    padding: 10px;
+    border-bottom: 2px solid;
+    font-family: 'Freckle Face', cursive;
+    font-size: 140px;
+    color: #FFFFFF;
+    text-align: center;
 
     img {
-      width: 80px;
-      margin-right: 5px;
-      margin-bottom: 5px;
-      position: absolute;
-    }
-
-    h3 {
-      font-family: 'EB Garamond', serif;
-      font-size: 150%;
-      margin-left: 100px;
-      margin-top: 0;
-      margin-bottom: 2px;
-      color: #227;
-    }
-
-    p, div.by_author {
-      margin-left: 100px;
-      margin-top: 0.5em; 
-      margin-bottom: 0.8em; 
-      font-family: 'EB Garamond', serif;
-    }
-
-    .entry-date {
-      font-family: 'Josefin Sans';
-      font-size: 150%;
-      margin-left: 100px;
-      margin-top: 0;
-      margin-bottom: 2px;
-      color: #7f10b5;
-
-
-    }
-
-    .author {
-      color: #44a;
-      font-weight: bold;
-      margin-right: 3em;
-      font-size: 10px;
+      float: left;
     }
   }
-}

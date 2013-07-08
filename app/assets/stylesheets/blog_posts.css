@@ -1,1 +1,47 @@
-.blog_posts table{border-collapse:collapse}.blog_posts table tr td{padding:5px;vertical-align:top}.blog_posts .list_image{width:60px;height:70px}.blog_posts .list_description{width:60%}.blog_posts .list_description dl{margin:0}.blog_posts .list_description dt{color:#244;font-weight:bold;font-size:larger}.blog_posts .list_description dd{margin:0}.blog_posts .list_actions{font-size:x-small;text-align:right;padding-left:1em}.blog_posts .list_line_even{background:#e0f8f8}.blog_posts .list_line_odd{background:#f8b0f8}
+.blog_posts {
+
+  table {
+    border-collapse: collapse;
+  }
+
+  table tr td {
+    padding: 5px;
+    vertical-align: top;
+  }
+
+  .list_image {
+    width:  60px;
+    height: 70px;
+  }
+
+  .list_description {
+    width: 60%;
+
+    dl {
+      margin: 0;
+    }
+
+    dt {
+      color:        #244;
+      font-weight:  bold;
+      font-size:    larger;
+    }
+
+    dd {
+      margin: 0;
+    }
+  }
+
+  .list_actions {
+    font-size:    x-small;
+    text-align:   right;
+    padding-left: 1em;
+  }
+
+  .list_line_even {
+    background:   #e0f8f8;
+  }
+  .list_line_odd {
+    background:   #f8b0f8;
+  }
+}

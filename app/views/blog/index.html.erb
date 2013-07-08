@@ -2,14 +2,20 @@
 <p id="notice"><%= notice %></p>
 <% end %>
 
-<h1>Stunable Blog</h1>
+<!-- <h1>Stunable Blog</h1> -->
 
 <% @blog_posts.each do |blog_post| %>
   <div class="entry">
-    <h3><%= blog_post.title %></h3>
-    <p><%= sanitize(blog_post.body) %></p>
-    <div class="price_line">
-      <span class="price"><%= blog_post.author %></span>
+  	<div class="entry-date">
+  		<p>need to create a date instance variable here </p>
+  	</div>
+    <h1><%= blog_post.title %></h1>
+
+    <div class="by_author">
+      <span class="author">posted by <%= blog_post.author %></span>
     </div>
+
+    <p><%= sanitize(blog_post.body) %></p>
   </div>
+
 <% end %>
