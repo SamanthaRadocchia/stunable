@@ -8,6 +8,7 @@
 #---
 # encoding: utf-8
 
+### TEST BLOG POSTS ####
 # To Populate the the blog_posts table with sample Posts
 BlogPost.delete_all
 BlogPost.create(title: 'Warrior by Foxes Lyrics Cause I am Listening to It',
@@ -36,4 +37,46 @@ BlogPost.create(title: 'Neon Eyes by Milkman Summa Fun',
         she had neon eyes. PARTY PARTY PARTY. 
       </p>},
   author: 'Lizzy Nolan')
+
+
+#### TEST PRODUCTS ####
+# To populate the products database with sample products 
+Product.delete_all
+Product.create(title: 'Lucca Couture Ugly as Fuck Dress',
+  description: 
+    %{<p>
+        Long sleeve I spy print dress. I'm speechless. Notice the price?!?!
+      </p>},
+  image_url:   'http://images.stunable.com/upload/xl/2013/02/26/1627_extralarge.jpg',    
+  price: 1236.00)
+# . . .
+Product.create(title: 'Lucca Couture Slutty Girl in a Hipster Sweater',
+  description:
+    %{<p>
+        Long sleeve leopard print sweater with shoulder stud detail.
+      </p>},
+  image_url: 'http://images.stunable.com/upload/xl/2013/02/26/1595_extralarge.jpg',
+  price: 49.95)
+# . . .
+
+Product.create(title: 'The Sam Rad Signature Dress',
+  description: 
+    %{<p>
+       Vintage-inspired dress featuring a multicolor ditsy floral print and lattice cutout detailing. 
+       Scoop neckline, exposed zip closure at back. 
+      </p>},
+  image_url: 'http://images.stunable.com/upload/xl/2013/02/26/1491_extralarge.jpg',
+  price: 34.95)
+
+
+Product.create(title: 'The Miss Cleo Fortune Teller Dress',
+  description: 
+    %{<p>
+       This lady can read your mind and what you're thinking is this:
+       I've GOT to have that hat thing.
+      </p>},
+  image_url: 'http://images.stunable.com/upload/xl/2013/02/26/1662_extralarge.jpg',
+  price: 34.95)
+
+
 

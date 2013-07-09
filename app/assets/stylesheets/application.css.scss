@@ -19,11 +19,73 @@ o.  )88b   888 .  888   888   888   888  d8(  888   888   888  888  888    .o
 
                                                                               
                                                                               */
-                                                                                                        
+/*
+*= require_self
+*= require_tree . */   
+
+/*serif fonts */                                                                                                    
 @import url(http://fonts.googleapis.com/css?family=EB+Garamond);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:100,300);
+/*sans-serif fonts*/
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans);
 @import url(http://fonts.googleapis.com/css?family=Text+Me+One);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic);
-@import url(http://fonts.googleapis.com/css?family=Josefin+Sans);
+
+
+h1{
+  margin: 0;
+  padding-bottom: 0.5em;
+  font-family: 'Josefin Sans';
+  font-size: 250%;
+  text-transform: uppercase;
+  color:#7f10b5;
+}
+
+h2{
+  margin: 0;
+  padding-bottom: 0.5em;
+  font-family: 'Josefin Sans';
+  font-size: 150%;
+  text-transform: uppercase;
+  color:#ffffff;
+}
+
+h3{  
+  margin: 0;
+  padding-bottom: 0.5em;
+  font-family: 'Josefin Sans';
+  font-size: 130%;
+  text-transform: lowercase;
+  color:#ffffff;
+}
+
+h4{
+  margin: 0;
+  padding-bottom: 0.5em;
+  font-family: 'Josefin Sans';
+  text-transform: lowercase;
+  font-size: 110%;
+  color:#ffffff;
+}
+
+h5,h6{
+  margin: 0;
+  padding-bottom: 0.5em;
+  font-family: 'EB Garamond', serif;
+  font-size: 100%;
+  color:#ffffff;
+}
+
+p{
+  margin: 0;
+  padding-bottom: 0.5em;
+  font-family: 'EB Garamond', serif;
+  /*font-family: 'Roberto Slab', serif;*/
+  font-size: 120%;
+  font-weight:lighter;
+  color:#ffffff;
+}
+
 
 body{
  /* text-align: center;*/
@@ -37,13 +99,31 @@ body{
     border:5px solid #e6e6e6;
     background-color: #000000;
     position:fixed;
+    height:1000px;
+    overflow:scroll;
     top:100px;
     z-index: 100000;
     opacity: .8;
+
   }
 
   .floating-container .inner-content{
     padding:15px;
+    position:relative;
+    
+  }
+
+  .alt-container{
+    margin: 0 auto;
+    width:100%;
+    left:4em;
+    border:5px solid #e6e6e6;
+    background-color: transparent;
+    position:relative;
+    height:1000px;
+    overflow:scroll;
+    top:100px;
+    z-index: 100000;
   }
 
   .background{

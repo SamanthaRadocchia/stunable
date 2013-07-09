@@ -19,6 +19,10 @@ o.  )88b   888 .  888   888   888   888  d8(  888   888   888  888  888    .o
 
                                                                               
                                                                               */
+
+/*                                                                              
+*= require_self
+*= require_tree . */  
                                                                                                         
 @import url(http://fonts.googleapis.com/css?family=EB+Garamond);
 @import url(http://fonts.googleapis.com/css?family=Text+Me+One);
@@ -61,10 +65,12 @@ blog {
     }
 
     p, div.by_author {
-      margin-left: 100px;
-      margin-top: 0.5em; 
-      margin-bottom: 0.8em; 
+      margin: 0;
+      padding-bottom: 0.5em;
       font-family: 'EB Garamond', serif;
+      font-size: 120%;
+      font-weight:lighter;
+      color:#ffffff;
     }
 
     .entry-date {

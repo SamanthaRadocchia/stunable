@@ -2,20 +2,15 @@
 <p id="notice"><%= notice %></p>
 <% end %>
 
-<h1>SHOP STUNABLE BITCHES</h1> 
+<h1>SHOP STUNABLE BITCHES</h1>
 
-<% @blog_posts.each do |blog_post| %>
+<% @products.each do |product| %>
   <div class="entry">
-  	<div class="entry-date">
-  		<p>need to create a date instance variable here </p>
-  	</div>
-    <h1><%= blog_post.title %></h1>
-
-    <div class="by_author">
-      <span class="author">posted by <%= blog_post.author %></span>
+    <%= image_tag(product.image_url) %>
+    <h3><%= product.title %></h3>
+    <p><%= sanitize(product.description) %></p>
+    <div class="price_line">
+      <span class="price"><%= number_to_currency(product.price) %></span>
     </div>
-
-    <p><%= sanitize(blog_post.body) %></p>
   </div>
-
 <% end %>

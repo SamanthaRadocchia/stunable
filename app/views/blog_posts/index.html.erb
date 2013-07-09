@@ -1,6 +1,10 @@
+<h1>Stunable Blog Admin</h1>
 
-<h1>Blog Posts</h1>
+<div class="button">
+<%= button_to 'Create New Blog Post', new_blog_post_path %>
+</div>
 
+<br />
 
 <table>
 <% @blog_posts.each do |blog_post| %>
@@ -24,6 +28,6 @@
 <% end %>
 </table>
 
-<br />
 
-<%= link_to 'New Blog Post', new_blog_post_path %>
+
+
