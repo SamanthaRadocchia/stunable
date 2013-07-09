@@ -1,4 +1,10 @@
 Stunable::Application.routes.draw do
+  resources :carts
+
+
+  resources :line_items
+
+
   get "store/index"
 
   resources :products
