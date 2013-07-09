@@ -43,11 +43,13 @@ o.  )88b   888 .  888   888   888   888  d8(  888   888   888  888  888    .o
 	<div class="nav">
 		<table style="border-spacing: 20px;">
 				<tr>
-					<td class="nav-links"> <%= link_to 'Shop', blog_path %> </td>
+					<td class="nav-links"> <%= link_to 'Blog', blog_path %> </td> <!-- only show this on pages NOT the blog -->
 					<td style="padding-right: 10px">
-					<td class="nav-links"> <%= link_to 'Stunable Sync', blog_path %> </td>
+					<td class="nav-links"> <%= link_to 'Shop', products_path %> </td>
 					<td style="padding-right: 10px">
-					<td class="nav-links"> <%= link_to 'About', blog_path %> </td>
+					<td class="nav-links"> <%= link_to 'Stunable Sync', page_path("stunable-sync") %> </td>
+					<td style="padding-right: 10px">
+					<td class="nav-links"> <%= link_to 'About', page_path("about") %> </td>
 				</tr>
 		</table>
 	</div>

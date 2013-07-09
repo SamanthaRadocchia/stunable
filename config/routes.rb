@@ -1,4 +1,7 @@
 Stunable::Application.routes.draw do
+  resources :products
+
+
   get "blog/index"
 
   resources :blog_posts
