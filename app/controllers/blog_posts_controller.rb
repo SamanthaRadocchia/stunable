@@ -1,5 +1,5 @@
 class BlogPostsController < ApplicationController
-  before_filter :authenticate, :except => [ :index, :show ] # requires username and password to add new post
+  
   # GET /blog_posts
   # GET /blog_posts.json
   def index
@@ -79,13 +79,6 @@ class BlogPostsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to blog_posts_url }
       format.json { head :no_content }
-    end
-  end
-
-private
-  def authenticate # requires username and password to add new post
-    authenticate_or_request_with_http_basic do |name, password|
-      name == "admin" && password == "secret"
     end
   end
 
