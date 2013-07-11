@@ -32,15 +32,19 @@ o.  )88b   888 .  888   888   888   888  d8(  888   888   888  888  888    .o
 
 <body class="<%= controller.controller_name %>">
 
-	<div class="background">
-    <%= image_tag("background.png") %>
-  </div>
-
-	<div class="logo">
-  		<%= link_to image_tag("stunable_logo.png"), blog_path %>
-	</div>
+<!-- 	<div class="background"> -->
+    <%#= image_tag("background.png") %>
+<!--   </div>
+ -->
+<!-- <div class="logo"> -->
+  		<%#= link_to image_tag("stunable_logo.png"), blog_path %>
+<!-- 	</div> -->
 
 	<div class="nav">
+			<div class="logo">
+  		<%= link_to image_tag("stunable_logo.png"), blog_path %>
+			</div>
+
 		<table style="border-spacing: 20px;">
 				<tr>
 					<td class="nav-links"> <%= link_to 'Blog', blog_path %> </td> <!-- only show this on pages NOT the blog -->

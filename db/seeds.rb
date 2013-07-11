@@ -18,7 +18,7 @@ BlogPost.create(title: 'Warrior by Foxes Lyrics Cause I am Listening to It',
         from under into your head. And outside the coldness into your skin
         and you need someone to keep the light in. ....whoa depressing. 
       </p>},
-  author: 'Samantha Radocchia')
+  author: 'Samantha Radocchia', date: 'Monday, July 8th')
 # . . .
 BlogPost.create(title: 'Shoes are Cute',
   body:
@@ -27,7 +27,7 @@ BlogPost.create(title: 'Shoes are Cute',
         the past two hours trying to make this test file and now I have nothing to 
         write about! Eeek! 
       </p>},
-  author: 'Lizzy Nolan')
+  author: 'Lizzy Nolan', date: 'Monday, July 8th')
 # . . .
 BlogPost.create(title: 'Neon Eyes by Milkman Summa Fun',
   body:
@@ -36,7 +36,7 @@ BlogPost.create(title: 'Neon Eyes by Milkman Summa Fun',
         shine across the water. As I saw her take her glasses off that's when I realized
         she had neon eyes. PARTY PARTY PARTY. 
       </p>},
-  author: 'Lizzy Nolan')
+  author: 'Lizzy Nolan', date: 'Monday, July 8th')
 
 
 #### TEST PRODUCTS ####

@@ -86,6 +86,14 @@ p{
   color:#ffffff;
 }
 
+html { 
+  background: url(background.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 
 body{
  /* text-align: center;*/
@@ -98,19 +106,19 @@ body{
     left:4em;
     border:5px solid #e6e6e6;
     background-color: #000000;
-    position:fixed;
+  /*  position:fixed;
     height:1000px;
-    overflow:scroll;
+    overflow:auto;*/
     top:100px;
     z-index: 100000;
     opacity: .8;
+    margin-top: 90px;
 
   }
 
   .floating-container .inner-content{
     padding:15px;
     position:relative;
-    
   }
 
   .alt-container{
@@ -126,12 +134,12 @@ body{
     z-index: 100000;
   }
 
-  .background{
+/*  .background{
     background:#F4F4F4 url("background.png");
     background-repeat:no-repeat;
     position:relative;
   }
-
+*/
   .nav{
     width:100%;
     left:290px;
@@ -141,7 +149,7 @@ body{
     height: 67px;
     top:-8px;
     z-index: 100000;
-    opacity: .6;
+    opacity: .9;
   }
 
   .nav .nav-links{
